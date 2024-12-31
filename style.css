@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* For Smartphone Screens */
+@media (max-width:600px){
+  main {
+    padding: 2rem;
+  }
+  }
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +18,7 @@ body{
   background: hsl(47, 88%, 63%);
   min-width: 375px;
   max-width: 1440px;
+  color: hsl(0, 0%, 7%)
 }
 
 main{
@@ -85,4 +93,18 @@ main{
 
 .container .blog-name{
   font-size: 0.7rem;
+}
+
+.blog-name a, .blog-name a:visited{
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 7%)
+}
+
+.blog-name a:hover{
+  color: hsl(47, 88%, 63%);
+}
+
+.blog-name a:active{
+  color: hsl(231, 84%, 47%)
 }
